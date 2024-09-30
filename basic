@@ -3,3 +3,9 @@
 The CITY table is described as follows:
 
 Select * FROM city where countrycode = 'USA' AND POPULATION > 100000 ;
+
+2)Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+The STATION table is described as follows:
+
+SELECT CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY) OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY ;
+SELECT CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY  ;
