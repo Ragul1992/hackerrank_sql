@@ -28,3 +28,10 @@ SELECT TOP(1)CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC,CITY DESC;
 SOL :
 SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE '[A,E,I,O,U]%';
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+4)Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+
+SOL :
+SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE '%[A,E,I,O,U]';
+
+
