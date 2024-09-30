@@ -1,3 +1,5 @@
+MS SQL SERVER 
+
 1)Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
 
 The CITY table is described as follows:
@@ -20,4 +22,9 @@ SELECT TOP(1)CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY),CITY;
 SELECT TOP(1)CITY, LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC,CITY DESC;
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+SOL :
+SELECT DISTINCT CITY FROM STATION WHERE CITY NOT LIKE '[A,E,I,O,U]%';
 
