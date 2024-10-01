@@ -43,3 +43,7 @@ SELECT DISTINCT CITY FROM STATION WHERE LOWER(SUBSTRING(CITY,1,1)) NOT IN ('a','
 
 SOL :
 SELECT NAME FROM STUDENTS WHERE MARKS> 75  ORDER BY SUBSTRING(NAME,LEN(NAME)-2,3),ID;
+--------------------------------------------------------------------------------------------------------------------------
+7)Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+SOL:
+SELECT name FROM employee order by name asc;
